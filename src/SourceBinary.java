@@ -63,7 +63,8 @@ public class SourceBinary {
                     {
                         result = i;
                         break;
-                    }else
+                    }
+                        else
                         {
                             z = 0;
                             for(int x = 0; x <= (arr2[i].length())-1; x++)

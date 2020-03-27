@@ -13,7 +13,7 @@ public class SourceBinary {
 
         try {
 
-            Scanner sc = new Scanner(new File("C:\\Users\\Abdifatah M Ibrahim\\Documents\\quranText.txt"));
+            Scanner sc = new Scanner(new File("my_path_to_qur'an_text\\quranText.txt"));
             List<String> lines = new ArrayList<String>();
 
             //parsing the Qur'an into an ArrayList of Strings: lines(Verses)

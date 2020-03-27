@@ -64,15 +64,15 @@ public class SourceBinary {
                         result = i;
                         break;
                     }
-                        else
-                        {
-                            z = 0;
-                            for(int x = 0; x <= (arr2[i].length())-1; x++)
-                                {
-                                    z=z+1;
-                                }
-                        num = num + z;
-                        }
+                    else
+                    {
+                        z = 0;
+                        for(int x = 0; x <= (arr2[i].length())-1; x++)
+                            {
+                                z=z+1;
+                            }
+                    num = num + z;
+                    }
                 }
 
             System.out.println("result2  = " + result);

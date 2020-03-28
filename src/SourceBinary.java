@@ -13,7 +13,7 @@ public class SourceBinary {
 
         try {
 
-            Scanner sc = new Scanner(new File("my_path_to_qur'an_text\\quranText.txt"));
+            Scanner sc = new Scanner(new File("C:\\Users\\Abdifatah M Ibrahim\\Documents\\quranText.txt"));
             List<String> lines = new ArrayList<String>();
 
             //parsing the Qur'an into an ArrayList of Strings: lines(Verses)
@@ -47,7 +47,7 @@ public class SourceBinary {
                             aa += Character.toString(arr[i].charAt(x));
                         }
                     }
-                    //Add the non spaced string to the arr2[]
+                    //Add the non spaced string:aa to the arr2[]
                     arr2[i] = aa;
                 }
 
@@ -55,17 +55,20 @@ public class SourceBinary {
 
                 int result = 0, num = 0, z = 0;
 
-                //what does this for loop do?
+                //Loops through the entire Quran to count the number of letters
+                //looks for char num falls in which verse
                 for(int i = 0; i < arr2.length; i++)
                 {
                     //where is num coming from?
-                    if(num >= 534)
+                    if(num >= 50000)
                     {
+                        //if the count is reached save the current index(Verse) and exit
                         result = i;
                         break;
                     }
                     else
                     {
+                        //if not, continue counting the number of char in the verse(z) and add to total char cout(num)
                         z = 0;
                         for(int x = 0; x <= (arr2[i].length())-1; x++)
                             {
